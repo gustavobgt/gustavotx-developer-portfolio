@@ -15,11 +15,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Awesome Portfolio Built with Nextjs</title>
+        <title>{`Gustavo Teixeira's Portfolio`}</title>
         <meta
-          name="description"
-          content="Explore CodeBucks's Next.js developer portfolio and 
-        discover the latest webapp projects and software engineering articles. 
+          name="Gustavo Teixeira's Portfolio"
+          content="Explore Gustavo Teixeira's Next.js developer portfolio and 
+        discover the latest webapp and mobile projects. 
         Showcase your skills as a full-stack developer and software engineer."
         />
       </Head>
@@ -41,11 +41,11 @@ export default function Home() {
             </div>
             <div className="flex w-1/2 flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Turning vision into reality with code and design."
+                text="Turning vision into reality with code."
                 className="!text-left !text-6xl xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-sm sm:!text-xs">
-              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web applications. Explore my latest projects and articles, showcasing my expertise in React.js and web development.
+              As a skilled full-stack developer, I am dedicated to turning ideas into innovative web and mobile applications. Explore my experience history, projects and articles, showcasing my expertise in React.js | Node.js and mobile | web development.
               </p>
               <div className="mt-2 flex items-center self-start lg:self-center">
                 <Link

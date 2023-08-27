@@ -1,10 +1,6 @@
 import React, { useRef } from "react";
-import {
-  motion,
-  useScroll,
-} from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
-
 
 const Details = ({ position, company, companyLink, time, address, work }) => {
   const ref = useRef(null);
@@ -39,7 +35,6 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 };
 
 const Experience = () => {
-
   const ref = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -48,75 +43,66 @@ const Experience = () => {
   });
 
   return (
+    <div className="my-64">
+      <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
+        Experience
+      </h2>
 
-      <div className="my-64">
-        <h2 className="font-bold text-8xl mb-32 w-full text-center md:text-6xl xs:text-4xl md:mb-16">
-          Experience
-        </h2>
-
-        <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
-          <motion.div
-            className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
+      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
+        <motion.div
+          className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
             origin-top  dark:bg-primaryDark dark:shadow-3xl"
-            style={{ scaleY: scrollYProgress }}
+          style={{ scaleY: scrollYProgress }}
+        />
+        <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
+          <Details
+            position="SR Software Engineer"
+            company="Zup Innovation"
+            companyLink="https://www.zup.com.br/"
+            time="2022-Present"
+            address="Uberlândia - MG"
+            work={
+              <>
+                {`I worked for one of the largest telecommunications companies in
+                the Brazilian market. I helped build the Design System and the
+                reusable component library for all the company's web
+                applications, and I also promoted and implemented a new
+                Microfrontend architecture for the applications.`}
+              </>
+            }
           />
-          <ul className="w-full flex flex-col items-start justify-between ml-4 xs:ml-2">
-            <Details
-              position="Software Engineer"
-              company="Google"
-              companyLink="https://google.com"
-              time="2022-Present"
-              address="Mountain View, CA"
-              work="Worked on a team responsible for developing new features for Google's search engine, including improving the accuracy and relevance of search results and developing new tools for data analysis and visualization."
-            />
 
-            <Details
-              position="Intern"
-              company="Facebook"
-              companyLink="https://facebook.com"
-              time="Summer 2021"
-              address="Menlo Park, CA."
-              work="Worked on a team responsible for developing a new mobile app
-              feature that allowed users to create and share short-form video
-              content, including designing and implementing a new user interface
-              and developing the backend infrastructure to support the feature."
-            />
+          <Details
+            position="PL Software Engineer"
+            company="Labsit"
+            companyLink="https://www.labsit.io/"
+            time="2021-2022"
+            address="São Paulo - SP"
+            work="
+            In this opportunity, I worked in the mobile and WEB areas for one of the largest HealthTech companies in the Brazilian market."
+          />
 
-            <Details
-              position="Software Developer"
-              company="Amazon"
-              companyLink="https://amazon.com"
-              time="2020-2021"
-              address="Seattle, WA."
-              work="Worked on a team responsible for developing Amazon's mobile app, including implementing new features such as product recommendations and user reviews, and optimizing the app's performance and reliability."
-            />
+          <Details
+            position="JR Software Developer"
+            company="Getinfo"
+            companyLink="https://www.getinfo.net.br/"
+            time="2020-2021"
+            address="Aracaju - SE"
+            work="My highlight and greatest challenge in this company was proposing and implementing a standardized architectural model for front-end stack projects. This involved separating the application into modules with their respective responsibilities, applying a standard folder and file structure, and implementing the container-view design pattern for better organization and separation of responsibilities for each application page. Throughout this process, I consistently documented and managed the development process of the projects where I applied this model. The goal was to address inherent problems within the company related to project maintainability while making them more robust and scalable."
+          />
 
-            <Details
-              position="Software Developer Intern"
-              company="Microsoft"
-              companyLink="https://microsoft.com"
-              time="Summer 2019"
-              address="Redmond, WA."
-              work="Worked on a team responsible for developing new features for
-              Microsoft's Windows operating system, including implementing a new
-              user interface for a system settings panel and optimizing the
-              performance of a core system component."
-            />
-
-            <Details
-              position="Teaching Assistant"
-              company="MIT"
-              companyLink="https://mit.edu"
-              time="Fall 2018"
-              address="Massachusetts Ave, Cambridge, MA."
-              work="Assisted in teaching a course on computer programming, held office
-              hours to help students with assignments, and graded exams and
-              assignments."
-            />
-          </ul>
-        </div>
-        </div>
-    );
+          <Details
+            position="Freelancer Software Developer"
+            company="Freelancer"
+            companyLink="https://gustavotx.dev"
+            time="2018-2023"
+            address="Aracaju - SE"
+            work="Worked as a freelancer and developed more than 4 web applications for my business customers using as main technologies React.js, Next.js, Node.js and Express."
+          />
+        </ul>
+      </div>
+    </div>
+  );
 };
 
 export default Experience;

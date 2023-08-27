@@ -2,14 +2,14 @@ import AnimatedText from "@/components/AnimatedText";
 import { motion, useMotionValue } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
-import blog1 from "../../public/images/articles/pagination component in reactjs.jpg";
-import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
-import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
-import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
-import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
-import blog6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
-import blog7 from "../../public/images/articles/What is Redux with easy explanation.png";
-import blog8 from "../../public/images/articles/What is higher order component in React.jpg";
+import blog1 from "../../public/images/articles/demystifying_pointers.png";
+//import blog2 from "../../public/images/articles/create loading screen in react js.jpg";
+//import blog3 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
+//import blog4 from "../../public/images/articles/smooth scrolling in reactjs.png";
+//import blog5 from "../../public/images/articles/create modal component in react using react portals.png";
+//import blog6 from "../../public/images/articles/todo list app built using react redux and framer motion.png";
+//import blog7 from "../../public/images/articles/What is Redux with easy explanation.png";
+//import blog8 from "../../public/images/articles/What is higher order component in React.jpg";
 
 import Layout from "@/components/Layout";
 import Link from "next/link";
@@ -78,8 +78,10 @@ const Article = ({ img, title, date, link }) => {
       "
     >
       <MovingImg img={img} title={title} link={link} />
-      <span className="text-primary font-semibold dark:text-primaryDark min-w-max pl-4 sm:self-start 
-      sm:pl-0 xs:text-sm">
+      <span
+        className="text-primary font-semibold dark:text-primaryDark min-w-max pl-4 sm:self-start 
+      sm:pl-0 xs:text-sm"
+      >
         {date}
       </span>
     </motion.li>
@@ -88,8 +90,10 @@ const Article = ({ img, title, date, link }) => {
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
-    dark:bg-dark dark:border-light">
+    <li
+      className="relative w-full p-4 col-span-1 bg-light border border-dark border-solid rounded-2xl 
+    dark:bg-dark dark:border-light"
+    >
       <div
         className="absolute  top-0 -right-3 w-[102%] h-[103%] rounded-[2rem]  rounded-br-3xl bg-dark 
         -z-10  "
@@ -128,9 +132,12 @@ export default function Articles() {
     <>
       <Head>
         <title>Simple Portfolio Built with Nextjs | Articles Page</title>
-        <meta name="description" content="Browse through CodeBucks's collection of software engineering articles and 
+        <meta
+          name="description"
+          content="Browse through CodeBucks's collection of software engineering articles and 
         tutorials on Next.js, React.js, web development, and more. 
-        Gain valuable insights and stay up-to-date with SEO tips for building a developer portfolio." />
+        Gain valuable insights and stay up-to-date with SEO tips for building a developer portfolio."
+        />
       </Head>
       <TransitionEffect />
       <main
@@ -145,25 +152,15 @@ export default function Articles() {
           <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
             <FeaturedArticle
               img={blog1}
-              title="build a custom pagination component in reactjs from scratch"
+              title="Demystifying Pointers in the C++ Language"
               time="9 min read"
-              summary="Learn how to build a custom pagination component in ReactJS from scratch. Follow this 
-              step-by-step guide to integrate Pagination component in your ReactJS project."
-              link="https://devdreaming.com/blogs/create-pagination-component-reactjs"
-            />
-
-            <FeaturedArticle
-              img={blog2}
-              title="creating stunning loading screens in react: Build 3 types of loading screens"
-              time="10 min read"
-              summary="Learn how to create stunning loading screens in React with 3 different methods. 
-              Discover how to use React-Loading, React-Lottie & build a custom loading screen. Improve the 
-              user experience."
-              link="https://devdreaming.com/blogs/create-3-different-types-of-loading-screens-in-react"
+              summary="Learn how pointers work under the cloths in C++ language."
+              link="https://www.linkedin.com/pulse/desmistificando-ponteiros-na-linguagem-c-parte-1-gustavo-bruno/"
             />
           </ul>
 
-          <h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
+          {/* 
+<h2 className="font-bold text-4xl w-full text-center mt-32 my-16">
             All Articles
           </h2>
 
@@ -205,6 +202,7 @@ export default function Articles() {
               link="https://devdreaming.com/blogs/higher-order-component-hoc-react"
             />
           </ul>
+*/}
         </Layout>
       </main>
     </>

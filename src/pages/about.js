@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profile from "../../public/images/profile/developer-pic-2.jpg";
+import profile from "../../public/images/profile/developer-pic-3.jpg";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Skills from "@/components/Skills";
@@ -39,9 +39,12 @@ export default function About() {
     <>
       <Head>
         <title>Minimal Portfolio Built with Nextjs | About Page</title>
-        <meta name="description" content="Learn more about CodeBucks, a Next.js developer with a passion for 
+        <meta
+          name="description"
+          content="Learn more about CodeBucks, a Next.js developer with a passion for 
         creating innovative solutions. Discover tips for building a developer portfolio and insights on 
-        full-stack development, front-end development, and back-end development." />
+        full-stack development, front-end development, and back-end development."
+        />
       </Head>
       <TransitionEffect />
       <main
@@ -54,35 +57,31 @@ export default function About() {
           />
 
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-            <div className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
-            md:col-span-8">
+            <div
+              className="col-span-3 flex flex-col items-start justify-start xl:col-span-4 md:order-2 
+            md:col-span-8"
+            >
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 BIOGRAPHY
               </h2>
               <p className="font-medium ">
-                Hi, I&apos;m <strong>CodeBucks</strong>, a web developer and
-                UI/UX designer with a passion for creating beautiful,
-                functional, and user-centered digital experiences. With 4 years
-                of experience in the field. I am always looking for new and
-                innovative ways to bring my clients&apos; visions to life.
+                {`I've been working with web and mobile software development for more than 4 years. I have started my career as a Freelancer and already developed 2 relatively big web applications for my business customers using as main technologies React.js, Next.js, Node.js and Express. `}
               </p>
               <p className="my-4 font-medium">
-                I believe that design is about more than just making things look
-                pretty – it&apos;s about solving problems and creating
-                intuitive, enjoyable experiences for users.
+                {`In my experiences working in companies I've worked with a good variety of diferent technologies such as React.js, Next.js, React Native, Node.js, Angular, MongoDB, Postgres and so on. 
+I've been working mostly focused on mobile develepment for the past 1 year with React Native, Android, IOS (Storyboard, Cocoapods, Testflight), and personally I've enjoyed it so much. But right now, I'm back to be mainly focused on web development, and it's ecosystem.`}
               </p>
               <p className="font-medium">
-                Whether I&apos;m working on a website, mobile app, or other
-                digital product, I bring my commitment to design excellence and
-                user-centered thinking to every project I work on. I look
-                forward to the opportunity to bring my skills and passion to
-                your next project.
+                {`I love what I do, and I'm constantly studying and catching up about new technologies and embracing what make sense to me, or the context I'm working with. 
+I consider myself a methodical person, I love making a good plan before start anything, do things one step at a time, and adpating things for the better according to it's context and reality.`}
               </p>
             </div>
-            <div className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
+            <div
+              className="relative col-span-3 h-max rounded-2xl border-2 border-solid border-dark 
             bg-light p-8 dark:border-light dark:bg-dark
             xl:col-span-4 md:col-span-8 md:order-1
-            ">
+            "
+            >
               <div
                 className="absolute  top-0 -right-3 -z-10 h-[103%] w-[102%]  rounded-[2rem] rounded-br-3xl 
                 bg-dark
@@ -98,24 +97,30 @@ export default function About() {
                 priority
               />
             </div>
-            <div className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
-            xl:items-center md:order-3">
+            <div
+              className="col-span-2 flex flex-col items-end justify-between xl:col-span-8 xl:flex-row 
+            xl:items-center md:order-3"
+            >
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={40} />+
+                  <AnimatedNumberFramerMotion value={10} />+
                 </span>
-                <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2
+                  className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                >
                   satisfied clients
                 </h2>
               </div>
 
               <div className="flex flex-col items-end justify-center xl:items-center">
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
-                  <AnimatedNumberFramerMotion value={50} />+
+                  <AnimatedNumberFramerMotion value={20} />+
                 </span>
-                <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2
+                  className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                >
                   projects completed
                 </h2>
               </div>
@@ -124,8 +129,10 @@ export default function About() {
                 <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                   <AnimatedNumberFramerMotion value={4} />+
                 </span>
-                <h2 className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
-                xl:text-center md:text-lg sm:text-base xs:text-sm">
+                <h2
+                  className="mb-4 text-xl font-medium capitalize text-dark/75 dark:text-light/75 
+                xl:text-center md:text-lg sm:text-base xs:text-sm"
+                >
                   Years of experience
                 </h2>
               </div>
